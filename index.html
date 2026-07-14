@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dezio AI - Automatizamos tu Negocio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/output.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-darkBg text-gray-200 font-inter overflow-x-hidden">
+    <!-- HEADER / NAVIGATION -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-darkBg/80 backdrop-blur-md border-b border-gray-800/60 transition-all duration-300">
+        <div class="w-[100%] mx-auto px-6 h-20 flex justify-around items-center">
+            <a href="#" class="flex items-center space-x-2 font-orbitron text-2xl tracking-wider z-50">
+                <span class="text-gradient-gold font-black">DEZIO</span>
+                <span class="text-gradient-blue font-black">AI</span>
+            </a>
+            <nav class="hidden lg:flex items-center space-x-8">
+                <ul class="flex space-x-8 text-sm font-semibold tracking-wide uppercase lg:text-[12px]">
+                    <li><a href="#inicio" class="hover:text-gold transition-colors duration-300">Inicio</a></li>
+                    <li><a href="#quienes-somos" class="hover:text-gold transition-colors duration-300">Quiénes Somos</a></li>
+                    <li><a href="#ofrecemos" class="hover:text-gold transition-colors duration-300">Qué Ofrecemos</a></li>
+                    <li><a href="#beneficios" class="hover:text-gold transition-colors duration-300">Beneficios</a></li>
+                    <li><a href="#equipo" class="hover:text-gold transition-colors duration-300">Equipo</a></li>
+                    <li><a href="#contacto" class="hover:text-gold transition-colors duration-300">Contacto</a></li>
+                </ul>
+                <!-- Botón de Acción -->
+                <a href="#contacto" class="px-5 py-2 rounded-full border border-gold text-gold hover:bg-gold hover:text-black font-semibold text-xs tracking-widest uppercase transition-all duration-300 glow-gold">
+                    Iniciar Proyecto
+                </a>
+            </nav>
+            <button id="menu-btn" class="lg:hidden text-gray-300 hover:text-gold focus:outline-none z-50" aria-label="Abrir menú">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+        <nav id="mobile-menu" class="hidden lg:hidden absolute top-full left-0 w-full bg-darkBg/95 backdrop-blur-md border-b border-gray-800 px-6 py-6 transition-all duration-300">
+            <ul class="flex flex-col space-y-4 text-center uppercase tracking-wider text-sm font-semibold">
+                <li><a href="#inicio" class="block py-2 hover:text-gold transition-colors">Inicio</a></li>
+                <li><a href="#quienes-somos" class="block py-2 hover:text-gold transition-colors">Quiénes Somos</a></li>
+                <li><a href="#ofrecemos" class="block py-2 hover:text-gold transition-colors">Qué Ofrecemos</a></li>
+                <li><a href="#beneficios" class="block py-2 hover:text-gold transition-colors">Beneficios</a></li>
+                <li><a href="#equipo" class="block py-2 hover:text-gold transition-colors">Equipo</a></li>
+                <li><a href="#contacto" class="block py-2 hover:text-gold transition-colors">Contacto</a></li>
+                <li class="pt-2">
+                    <a href="#contacto" class="inline-block w-full px-5 py-3 rounded-full border border-gold text-gold hover:bg-gold hover:text-black font-semibold text-xs tracking-widest uppercase transition-all duration-300">
+                        Iniciar Proyecto
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- HERO SECTION (INICIO) -->
+    <section id="inicio" class="relative min-h-screen flex items-center justify-center pt-24 overflow-hidden">
+        <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-gold/10 rounded-full filter blur-[120px]"></div>
+        <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-electricBlue/10 rounded-full filter blur-[120px]"></div>
+        <div class="max-w-5xl flex flex-col justify-center items-center mx-auto px-6 text-center relative z-10">
+            <img class="w-[200px] md:w-[350px] lg:w-[450px] xl:w-[300px] mb-5" src="image/logocompleto-removebg-preview.png" alt="" srcset="">
+            <p class="font-orbitron text-xs md:text-sm tracking-[0.4em] uppercase text-gray-400 mb-8">— Automatizamos tu Negocio —</p>
+            <p class="text-gray-400 max-w-2xl mx-auto text-base md:text-lg mb-10 font-light">
+                Integramos soluciones de inteligencia artificial avanzada, workflows inteligentes y optimización de sistemas para escalar tus operaciones sin límites de velocidad ni fronteras.
+            </p>  
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4 ">
+                <a href="#ofrecemos" class="w-full sm:w-auto px-8 py-4 rounded-lg hover:bg-[#2933bb] bg-electricBlue text-white font-semibold hover:bg-opacity-90 transition-all duration-300 glow-blue tracking-wide">
+                    Descubrir Soluciones
+                </a>
+                <a href="#contacto" class="w-full sm:w-auto px-8 py-4 rounded-lg border border-gray-700 hover:border-gold/60 text-gray-300 hover:text-white transition-all duration-300 tracking-wide">
+                    Agendar Consultoría
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- QUIÉNES SOMOS -->
+    <section id="quienes-somos" class="py-24 border-t border-gray-900 bg-black/40 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="text-xs font-bold text-gold uppercase tracking-widest block mb-3">Tecnología sin Precedentes</span>
+                    <h2 class="font-orbitron text-3xl md:text-4xl font-black text-white uppercase tracking-tight mb-6">
+                        Quiénes Somos
+                    </h2>
+                    <p class="text-gray-400 leading-relaxed mb-6 font-light">
+                        En <strong class="text-white">Dezio AI</strong> nos consolidamos como arquitectos de la automatización empresarial. Combinamos el desarrollo de software puro de vanguardia con infraestructuras ERP y modelos de Inteligencia Artificial de última generación.
+                    </p>
+                    <p class="text-gray-400 leading-relaxed font-light">
+                        Creemos que el futuro pertenece a las marcas que logran operar con total autonomía. Nuestra misión es eliminar los cuellos de botella manuales e impulsar tus ventas y productividad de forma inteligente y en piloto automático.
+                    </p>
+                </div>
+                <div class="relative group">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-gold to-electricBlue rounded-lg blur opacity-30 group-hover:opacity-50 transition duration-1000"></div>
+                    <div class="relative bg-darkBg border border-gray-800 p-8 rounded-lg">
+                        <div class="grid grid-cols-2 gap-6">
+                            <div class="p-6 border-l-2 border-gold bg-black/20">
+                                <h3 class="font-orbitron text-2xl font-bold text-white">99%</h3>
+                                <p class="text-xs text-gray-500 uppercase tracking-widest mt-2">Eficiencia Operativa</p>
+                            </div>
+                            <div class="p-6 border-l-2 border-electricBlue bg-black/20">
+                                <h3 class="font-orbitron text-2xl font-bold text-white">24/7</h3>
+                                <p class="text-xs text-gray-500 uppercase tracking-widest mt-2">Soporte Automatizado</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- QUÉ OFRECEMOS -->
+    <section id="ofrecemos" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <span class="text-xs font-bold text-electricBlue hover:text-gold transition-colors uppercase tracking-widest block mb-3">Nuestros Servicios</span>
+            <h2 class="font-orbitron text-3xl md:text-4xl font-black text-white uppercase tracking-tight mb-16">
+                ¿Qué Ofrecemos?
+            </h2>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Servicio 1 -->
+                <div class="bg-black/30 border border-gray-800 p-8 rounded-xl hover:border-gold/50 transition-all duration-300 text-left group hover:-translate-y-1">
+                    <div class="w-12 h-12 flex items-center justify-center rounded-lg bg-gold/10 text-gold mb-6 group-hover:glow-gold">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <h3 class="font-orbitron text-lg font-bold text-white mb-4 uppercase">Automatización de Workflows</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed font-light">
+                        Diseño y conexión de flujos de trabajo inteligentes que enlazan tus plataformas sin fricciones mediante webhooks avanzados, reduciendo tiempos manuales a cero.
+                    </p>
+                </div>
+                <!-- Servicio 2 -->
+                <div class="bg-black/30 border border-gray-800 p-8 rounded-xl hover:border-electricBlue/50 transition-all duration-300 text-left group hover:-translate-y-1">
+                    <div class="w-12 h-12 flex items-center justify-center rounded-lg bg-electricBlue/10 text-electricBlue mb-6 group-hover:glow-blue">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>
+                    </div>
+                    <h3 class="font-orbitron text-lg font-bold text-white mb-4 uppercase">Integración de I.A.</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed font-light">
+                        Modelos predictivos y procesamiento de lenguaje natural aplicados a tus bases de datos corporativas para respuestas automatizadas y toma de decisiones ultra rápida.
+                    </p>
+                </div>
+                <!-- Servicio 3 -->
+                <div class="bg-black/30 border border-gray-800 p-8 rounded-xl hover:border-gold/50 transition-all duration-300 text-left group hover:-translate-y-1">
+                    <div class="w-12 h-12 flex items-center justify-center rounded-lg bg-gold/10 text-gold mb-6 group-hover:glow-gold">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.58 4 8 4s8-2.19 8-4V7M4 7c0 2.21 3.58 4 8 4s8-2.19 8-4M4 7c0-2.21 3.58-4 8-4s8 2.19 8 4m0 5c0 2.21-3.58 4-8 4s-8-2.19-8-4"></path></svg>
+                    </div>
+                    <h3 class="font-orbitron text-lg font-bold text-white mb-4 uppercase">Infraestructura ERP</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed font-light">
+                        Implementación, consultoría y despliegue de software empresarial escalable y seguro para mantener un control en tiempo real de tu facturación y stock.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- BENEFICIOS -->
+    <section id="beneficios" class="py-24 bg-black/40 border-t border-gray-900 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-bold text-gold uppercase tracking-widest block mb-3">Impacto Real</span>
+                <h2 class="font-orbitron text-3xl md:text-4xl font-black text-white uppercase tracking-tight">
+                    ¿Qué Beneficios Obtienes?
+                </h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Beneficio 1 -->
+                <div class="flex gap-4 p-6 bg-darkBg border border-gray-800 rounded-lg hover:border-gold/40 transition-colors">
+                    <span class="font-orbitron text-xl font-bold text-gradient-gold">01/</span>
+                    <div>
+                        <h4 class="font-semibold text-white uppercase text-base mb-2">Ahorro de Tiempo Incalculable</h4>
+                        <p class="text-gray-400 text-sm font-light">Elimina las tareas repetitivas de tu equipo para que puedan concentrarse en el verdadero núcleo estratégico de tu empresa.</p>
+                    </div>
+                </div>
+                <!-- Beneficio 2 -->
+                <div class="flex gap-4 p-6 bg-darkBg border border-gray-800 rounded-lg hover:border-electricBlue/40 transition-colors">
+                    <span class="font-orbitron text-xl font-bold text-gradient-blue">02/</span>
+                    <div>
+                        <h4 class="font-semibold text-white uppercase text-base mb-2">Reducción de Margen de Error</h4>
+                        <p class="text-gray-400 text-sm font-light">Las integraciones automatizadas procesan transacciones y registros con un 100% de precisión algorítmica.</p>
+                    </div>
+                </div>
+                <!-- Beneficio 3 -->
+                <div class="flex gap-4 p-6 bg-darkBg border border-gray-800 rounded-lg hover:border-gold/40 transition-colors">
+                    <span class="font-orbitron text-xl font-bold text-gradient-gold">03/</span>
+                    <div>
+                        <h4 class="font-semibold text-white uppercase text-base mb-2">Escalabilidad Sin Límites</h4>
+                        <p class="text-gray-400 text-sm font-light">Tu infraestructura técnica crecerá automáticamente a la par de tus ventas, sin necesidad de sobrecargar costes de personal.</p>
+                    </div>
+                </div>
+                <!-- Beneficio 4 -->
+                <div class="flex gap-4 p-6 bg-darkBg border border-gray-800 rounded-lg hover:border-electricBlue/40 transition-colors">
+                    <span class="font-orbitron text-xl font-bold text-gradient-blue">04/</span>
+                    <div>
+                        <h4 class="font-semibold text-white uppercase text-base mb-2">Control en Tiempo Real</h4>
+                        <p class="text-gray-400 text-sm font-light">Toma decisiones de negocio respaldadas por analíticas inmediatas y reportes automatizados que llegan directo a tu dispositivo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- EQUIPO -->
+    <section id="equipo" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <span class="text-xs font-bold text-electricBlue uppercase tracking-widest block mb-3">Nuestras Mentes</span>
+            <h2 class="font-orbitron text-3xl md:text-4xl font-black text-white uppercase tracking-tight mb-16">
+                El Equipo
+            </h2>
+            <div class="flex flex-wrap justify-center gap-12">
+                <div class="w-64 flex flex-col items-center">
+                    <div class="w-40 h-40 rounded-full border-2 border-gold p-1 bg-black mb-6 glow-gold">
+                        <div class="w-full h-full rounded-full bg-gradient-to-tr from-gold/40 to-black flex items-center justify-center text-gold font-orbitron text-3xl font-bold">
+                            OR
+                        </div>
+                    </div>
+                    <h3 class="font-orbitron text-lg font-bold text-white uppercase">Ondayner Ramírez</h3>
+                    <p class="text-xs text-gold uppercase tracking-widest mt-1">Desarrollador web & consultor Odoo/N8N</p>
+                    <p class="text-gray-500 text-xs mt-3 px-4 font-light leading-relaxed">Especialista en frontend, Odoo ERP e integraciones de automatizaciones dinámicas.</p>
+                </div>
+                <div class="w-64 flex flex-col items-center">
+                    <div class="w-40 h-40 rounded-full border-2 border-electricBlue p-1 bg-black mb-6 glow-blue">
+                        <div class="w-full h-full rounded-full bg-gradient-to-tr from-electricBlue/40 to-black flex items-center justify-center text-electricBlue font-orbitron text-3xl font-bold">
+                            EY
+                        </div>
+                    </div>
+                    <h3 class="font-orbitron text-lg font-bold text-white uppercase">Eduardo Yanes</h3>
+                    <p class="text-xs text-electricBlue uppercase tracking-widest mt-1">Especialista en sistemas</p>
+                    <p class="text-gray-500 text-xs mt-3 px-4 font-light leading-relaxed">Estratega corporativo y supervisor técnico para integraciones globales.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CONTACTO -->
+    <section id="contacto" class="py-24 bg-black/40 border-t border-gray-900 relative">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="text-xs font-bold text-gold uppercase tracking-widest block mb-3">Hagamos Algo Increíble</span>
+                <h2 class="font-orbitron text-3xl md:text-4xl font-black text-white uppercase tracking-tight">
+                    Inicia tu Transformación
+                </h2>
+                <p class="text-gray-400 text-sm mt-3 font-light">Cuéntanos sobre tu negocio y un especialista de Dezio AI se comunicará en breve.</p>
+            </div>
+
+            <form id="contact-form" class="space-y-6">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-xs uppercase tracking-widest text-gray-400 font-bold mb-2">Nombre Completo</label>
+                        <input type="text" required class="w-full bg-darkBg border border-gray-800 focus:border-gold text-white text-sm px-4 py-3 rounded outline-none transition-colors" placeholder="Ej. John Doe">
+                    </div>
+                    <div>
+                        <label class="block text-xs uppercase tracking-widest text-gray-400 font-bold mb-2">Correo Electrónico</label>
+                        <input type="email" required class="w-full bg-darkBg border border-gray-800 focus:border-electricBlue text-white text-sm px-4 py-3 rounded outline-none transition-colors" placeholder="correo@ejemplo.com">
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-xs uppercase tracking-widest text-gray-400 font-bold mb-2">¿Qué deseas automatizar?</label>
+                    <textarea rows="4" required class="w-full bg-darkBg border border-gray-800 focus:border-gold text-white text-sm px-4 py-3 rounded outline-none transition-colors resize-none" placeholder="Describe brevemente tus procesos actuales..."></textarea>
+                </div>
+                
+                <div class="text-center">
+                    <button type="submit" class="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-gold to-electricBlue text-white font-orbitron font-bold text-xs uppercase tracking-widest rounded hover:opacity-90 transition-opacity duration-300">
+                        Enviar Mensaje Seguro
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <footer class="bg-darkBg border-t border-gray-900 py-12">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+            <!-- Branding -->
+            <div class="flex flex-col items-center md:items-start">
+                <a href="#" class="font-orbitron text-2xl tracking-wider">
+                    <span class="text-gradient-gold font-black">DEZIO</span>
+                    <span class="text-gradient-blue font-black">AI</span>
+                </a>
+                <p class="text-gray-500 text-xs mt-2">© 2026 Dezio AI. Todos los derechos reservados.</p>
+            </div>
+
+            <!-- Footer links -->
+            <div class="flex flex-wrap justify-center gap-6 text-xs uppercase tracking-wider text-gray-400">
+                <a href="#inicio" class="hover:text-gold transition-colors">Inicio</a>
+                <a href="#quienes-somos" class="hover:text-gold transition-colors">Quiénes</a>
+                <a href="#ofrecemos" class="hover:text-gold transition-colors">Ofrecemos</a>
+                <a href="#contacto" class="hover:text-gold transition-colors">Contacto</a>
+            </div>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

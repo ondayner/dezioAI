@@ -1,0 +1,20 @@
+        /* Estilos personalizados para emular el feeling futurista del logo */
+        .text-gradient-gold {
+            background: linear-gradient(135deg, #FFE293 0%, #D4AF37 50%, #A67C1E 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .text-gradient-blue {
+            background: linear-gradient(135deg, #00C2FF 0%, #0052FF 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .glow-gold {
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.15);
+        }
+        .glow-blue {
+            box-shadow: 0 0 25px rgba(0, 82, 255, 0.3);
+        }
+        .border-gradient {
+            border-image: linear-gradient(to right, #D4AF37, #0052FF) 1;
+        }
