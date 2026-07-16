@@ -27,7 +27,6 @@
             const destinatario = 'dezioai2304@gmail.com';
             const asunto = encodeURIComponent(`Correo de: ${nombre}`);
             const cuerpo = encodeURIComponent(
-                `Nombre Completo: ${nombre}\n` +
                 `\n${mensaje}`
             );
             
