@@ -1,0 +1,60 @@
+        /* Estilos personalizados para emular el feeling futurista del logo */
+        .text-gradient-gold {
+            background: linear-gradient(135deg, #FFE293 0%, #D4AF37 50%, #A67C1E 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .text-gradient-blue {
+            background: linear-gradient(135deg, #00C2FF 0%, #0052FF 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .glow-gold {
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.15);
+        }
+        .glow-blue {
+            box-shadow: 0 0 25px rgba(0, 82, 255, 0.3);
+        }
+        .border-gradient {
+            border-image: linear-gradient(to right, #D4AF37, #0052FF) 1;
+        }
+
+::selection {
+    background-color: rgba(212, 175, 55, 0.3); /* Dorado translúcido (puedes ajustarlo a tu tono de oro) */
+    color: #ffffff;
+}
+
+/* Para navegadores basados en Firefox anterior */
+::-moz-selection {
+    background-color: rgba(212, 175, 55, 0.3);
+    color: #ffffff;
+}
+
+/* Ancho y diseño general de la barra para navegadores basados en Webkit (Chrome, Safari, Edge, etc.) */
+::-webkit-scrollbar {
+    width: 14px;            
+    height: 10px;     
+}
+
+/* El fondo por donde se desliza la barra (Track) */
+::-webkit-scrollbar-track {
+    background: #0d0d11;     
+    border-left: 1px solid rgba(255, 255, 255, 0.05); /* Sutil separación visual */
+}
+
+/* El indicador/manija que se arrastra (Thumb) */
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #d4af37, #2933bb); 
+    border-radius: 9999px;     /
+    border: 2px solid #0d0d11;
+}
+
+/* Efecto hover al pasar el cursor sobre la barra */
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #f3e5ab, #3b42e4);
+}
+
+html {
+    scrollbar-width: thin;
+    scrollbar-color: #d4af37 #0d0d11; 
+}
