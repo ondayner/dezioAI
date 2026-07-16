@@ -25,11 +25,10 @@
             const mensaje = form.querySelector('textarea').value;
             
             const destinatario = 'dezioai2304@gmail.com';
-            const asunto = encodeURIComponent(`Nuevo Contacto Web: ${nombre}`);
+            const asunto = encodeURIComponent(`Correo de: ${nombre}`);
             const cuerpo = encodeURIComponent(
                 `Nombre Completo: ${nombre}\n` +
-                `Correo Electrónico: ${correo}\n\n` +
-                `¿Qué deseas automatizar?\n${mensaje}`
+                `\n${mensaje}`
             );
             
             window.location.href = `mailto:${destinatario}?subject=${asunto}&body=${cuerpo}`;
