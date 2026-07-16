@@ -10,6 +10,8 @@
     
     <link rel="stylesheet" href="css/output.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <link rel="icon" href="image/logocompleto-removebg-preview.png">
     
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -63,7 +65,9 @@
         <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-electricBlue/10 rounded-full filter blur-[120px]"></div>
         <div class="max-w-5xl flex flex-col justify-center items-center mx-auto px-6 text-center relative z-10">
             <img class="w-[200px] md:w-[350px] lg:w-[450px] xl:w-[300px] mb-5" src="image/logocompleto-removebg-preview.png" alt="" srcset="">
-            <p class="font-orbitron text-xs md:text-sm tracking-[0.4em] uppercase text-gray-400 mb-8">— Automatizamos tu Negocio —</p>
+            <p id="typewriter-title" class="font-orbitron text-xs md:text-sm tracking-[0.4em] uppercase text-gray-400 mb-8 min-h-[20px]">
+            
+            </p>            
             <p class="text-gray-400 max-w-2xl mx-auto text-base md:text-lg mb-10 font-light">
                 Integramos soluciones de inteligencia artificial avanzada, workflows inteligentes y optimización de sistemas para escalar tus operaciones sin límites de velocidad ni fronteras.
             </p>  
@@ -82,9 +86,11 @@
         <div class="max-w-7xl mx-auto px-6">
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div>
-                    <span class="text-xs font-bold text-gold uppercase tracking-widest block mb-3">Tecnología sin Precedentes</span>
-                    <h2 class="font-orbitron text-3xl md:text-4xl font-black text-white uppercase tracking-tight mb-6">
-                        Quiénes Somos
+                    <span id="typewriter-tech-sub" class="text-xs font-bold text-gold uppercase tracking-widest block mb-3 min-h-[16px]">
+
+                    </span>                    
+                    <h2 id="typewriter-about" class="font-orbitron text-3xl md:text-4xl font-black text-white uppercase tracking-tight mb-6 min-h-[40px]">
+
                     </h2>
                     <p class="text-gray-400 leading-relaxed mb-6 font-light">
                         En <strong class="text-white">Dezio AI</strong> nos consolidamos como arquitectos de la automatización empresarial. Combinamos el desarrollo de software puro de vanguardia con infraestructuras ERP y modelos de Inteligencia Artificial de última generación.
@@ -98,11 +104,11 @@
                     <div class="relative bg-darkBg border border-gray-800 p-8 rounded-lg">
                         <div class="grid grid-cols-2 gap-6">
                             <div class="p-6 border-l-2 border-gold bg-black/20">
-                                <h3 class="font-orbitron text-2xl font-bold text-white">99%</h3>
+                                <h3 id="counter-percent" class="font-orbitron text-2xl font-bold text-white">0%</h3>
                                 <p class="text-xs text-gray-500 uppercase tracking-widest mt-2">Eficiencia Operativa</p>
                             </div>
                             <div class="p-6 border-l-2 border-electricBlue bg-black/20">
-                                <h3 class="font-orbitron text-2xl font-bold text-white">24/7</h3>
+                                <h3 id="counter-hours" class="font-orbitron text-2xl font-bold text-white">0/7</h3>
                                 <p class="text-xs text-gray-500 uppercase tracking-widest mt-2">Soporte Automatizado</p>
                             </div>
                         </div>
@@ -114,38 +120,43 @@
     <!-- QUÉ OFRECEMOS -->
     <section id="ofrecemos" class="py-24 relative">
         <div class="max-w-7xl mx-auto px-6 text-center">
-            <span class="text-xs font-bold text-electricBlue hover:text-gold transition-colors uppercase tracking-widest block mb-3">Nuestros Servicios</span>
-            <h2 class="font-orbitron text-3xl md:text-4xl font-black text-white uppercase tracking-tight mb-16">
-                ¿Qué Ofrecemos?
+            <span id="typewriter-services-sub" class="text-xs font-bold text-electricBlue hover:text-gold transition-colors uppercase tracking-widest block mb-3 min-h-[16px]">
+            
+            </span>
+            <h2 id="typewriter-services-title" class="font-orbitron text-3xl md:text-4xl font-black text-white uppercase tracking-tight mb-16 min-h-[40px]">
+
             </h2>
 
             <div class="grid md:grid-cols-3 gap-8">
-                <!-- Servicio 1 -->
                 <div class="bg-black/30 border border-gray-800 p-8 rounded-xl hover:border-gold/50 transition-all duration-300 text-left group hover:-translate-y-1">
                     <div class="w-12 h-12 flex items-center justify-center rounded-lg bg-gold/10 text-gold mb-6 group-hover:glow-gold">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
                     </div>
-                    <h3 class="font-orbitron text-lg font-bold text-white mb-4 uppercase">Automatización de Workflows</h3>
+                    <h3 id="typewriter-workflow" class="font-orbitron text-lg font-bold text-white mb-4 uppercase min-h-[28px]">
+
+                    </h3>                    
                     <p class="text-gray-400 text-sm leading-relaxed font-light">
                         Diseño y conexión de flujos de trabajo inteligentes que enlazan tus plataformas sin fricciones mediante webhooks avanzados, reduciendo tiempos manuales a cero.
                     </p>
                 </div>
-                <!-- Servicio 2 -->
                 <div class="bg-black/30 border border-gray-800 p-8 rounded-xl hover:border-electricBlue/50 transition-all duration-300 text-left group hover:-translate-y-1">
                     <div class="w-12 h-12 flex items-center justify-center rounded-lg bg-electricBlue/10 text-electricBlue mb-6 group-hover:glow-blue">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>
                     </div>
-                    <h3 class="font-orbitron text-lg font-bold text-white mb-4 uppercase">Integración de I.A.</h3>
+                    <h3 id="typewriter-ia" class="font-orbitron text-lg font-bold text-white mb-4 uppercase min-h-[28px]">
+
+                    </h3>
                     <p class="text-gray-400 text-sm leading-relaxed font-light">
                         Modelos predictivos y procesamiento de lenguaje natural aplicados a tus bases de datos corporativas para respuestas automatizadas y toma de decisiones ultra rápida.
                     </p>
                 </div>
-                <!-- Servicio 3 -->
                 <div class="bg-black/30 border border-gray-800 p-8 rounded-xl hover:border-gold/50 transition-all duration-300 text-left group hover:-translate-y-1">
                     <div class="w-12 h-12 flex items-center justify-center rounded-lg bg-gold/10 text-gold mb-6 group-hover:glow-gold">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.58 4 8 4s8-2.19 8-4V7M4 7c0 2.21 3.58 4 8 4s8-2.19 8-4M4 7c0-2.21 3.58-4 8-4s8 2.19 8 4m0 5c0 2.21-3.58 4-8 4s-8-2.19-8-4"></path></svg>
                     </div>
-                    <h3 class="font-orbitron text-lg font-bold text-white mb-4 uppercase">Infraestructura ERP</h3>
+                    <h3 id="typewriter-erp" class="font-orbitron text-lg font-bold text-white mb-4 uppercase min-h-[28px]">
+
+                    </h3>                    
                     <p class="text-gray-400 text-sm leading-relaxed font-light">
                         Implementación, consultoría y despliegue de software empresarial escalable y seguro para mantener un control en tiempo real de tu facturación y stock.
                     </p>
@@ -157,43 +168,48 @@
     <section id="beneficios" class="py-24 bg-black/40 border-t border-gray-900 relative">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-xs font-bold text-gold uppercase tracking-widest block mb-3">Impacto Real</span>
-                <h2 class="font-orbitron text-3xl md:text-4xl font-black text-white uppercase tracking-tight">
-                    ¿Qué Beneficios Obtienes?
+                <span id="typewriter-benefits-sub" class="text-xs font-bold text-gold uppercase tracking-widest block mb-3 min-h-[16px]">
+
+                </span>
+                <h2 id="typewriter-benefits-title" class="font-orbitron text-3xl md:text-4xl font-black text-white uppercase tracking-tight min-h-[40px]">
+
                 </h2>
             </div>
-
             <div class="grid md:grid-cols-2 gap-8">
-                <!-- Beneficio 1 -->
                 <div class="flex gap-4 p-6 bg-darkBg border border-gray-800 rounded-lg hover:border-gold/40 transition-colors">
                     <span class="font-orbitron text-xl font-bold text-gradient-gold">01/</span>
                     <div>
-                        <h4 class="font-semibold text-white uppercase text-base mb-2">Ahorro de Tiempo Incalculable</h4>
-                        <p class="text-gray-400 text-sm font-light">Elimina las tareas repetitivas de tu equipo para que puedan concentrarse en el verdadero núcleo estratégico de tu empresa.</p>
+                    <h4 id="typewriter-benefit-time" class="font-semibold text-white uppercase text-base mb-2 min-h-[24px]">
+
+                    </h4>                        
+                    <p class="text-gray-400 text-sm font-light">Elimina las tareas repetitivas de tu equipo para que puedan concentrarse en el verdadero núcleo estratégico de tu empresa.</p>
                     </div>
                 </div>
-                <!-- Beneficio 2 -->
                 <div class="flex gap-4 p-6 bg-darkBg border border-gray-800 rounded-lg hover:border-electricBlue/40 transition-colors">
                     <span class="font-orbitron text-xl font-bold text-gradient-blue">02/</span>
                     <div>
-                        <h4 class="font-semibold text-white uppercase text-base mb-2">Reducción de Margen de Error</h4>
-                        <p class="text-gray-400 text-sm font-light">Las integraciones automatizadas procesan transacciones y registros con un 100% de precisión algorítmica.</p>
+                    <h4 id="typewriter-benefit-error" class="font-semibold text-white uppercase text-base mb-2 min-h-[24px]">
+
+                    </h4>                        
+                    <p class="text-gray-400 text-sm font-light">Las integraciones automatizadas procesan transacciones y registros con un 100% de precisión algorítmica.</p>
                     </div>
                 </div>
-                <!-- Beneficio 3 -->
                 <div class="flex gap-4 p-6 bg-darkBg border border-gray-800 rounded-lg hover:border-gold/40 transition-colors">
                     <span class="font-orbitron text-xl font-bold text-gradient-gold">03/</span>
                     <div>
-                        <h4 class="font-semibold text-white uppercase text-base mb-2">Escalabilidad Sin Límites</h4>
-                        <p class="text-gray-400 text-sm font-light">Tu infraestructura técnica crecerá automáticamente a la par de tus ventas, sin necesidad de sobrecargar costes de personal.</p>
+                    <h4 id="typewriter-benefit-scale" class="font-semibold text-white uppercase text-base mb-2 min-h-[24px]">
+
+                    </h4>                        
+                    <p class="text-gray-400 text-sm font-light">Tu infraestructura técnica crecerá automáticamente a la par de tus ventas, sin necesidad de sobrecargar costes de personal.</p>
                     </div>
                 </div>
-                <!-- Beneficio 4 -->
                 <div class="flex gap-4 p-6 bg-darkBg border border-gray-800 rounded-lg hover:border-electricBlue/40 transition-colors">
                     <span class="font-orbitron text-xl font-bold text-gradient-blue">04/</span>
                     <div>
-                        <h4 class="font-semibold text-white uppercase text-base mb-2">Control en Tiempo Real</h4>
-                        <p class="text-gray-400 text-sm font-light">Toma decisiones de negocio respaldadas por analíticas inmediatas y reportes automatizados que llegan directo a tu dispositivo.</p>
+                    <h4 id="typewriter-benefit-control" class="font-semibold text-white uppercase text-base mb-2 min-h-[24px]">
+
+                    </h4>                        
+                    <p class="text-gray-400 text-sm font-light">Toma decisiones de negocio respaldadas por analíticas inmediatas y reportes automatizados que llegan directo a tu dispositivo.</p>
                     </div>
                 </div>
             </div>
@@ -202,10 +218,12 @@
     <!-- EQUIPO -->
     <section id="equipo" class="py-24 relative">
         <div class="max-w-7xl mx-auto px-6 text-center">
-            <span class="text-xs font-bold text-electricBlue uppercase tracking-widest block mb-3">Nuestras Mentes</span>
-            <h2 class="font-orbitron text-3xl md:text-4xl font-black text-white uppercase tracking-tight mb-16">
-                El Equipo
-            </h2>
+                <span id="typewriter-team-sub" class="text-xs font-bold text-electricBlue uppercase tracking-widest block mb-3 min-h-[16px]">
+
+                </span>
+                <h2 id="typewriter-team-title" class="font-orbitron text-3xl md:text-4xl font-black text-white uppercase tracking-tight mb-16 min-h-[40px]">
+
+                </h2>
             <div class="flex flex-wrap justify-center gap-12">
                 <div class="w-64 flex flex-col items-center">
                     <div class="w-40 h-40 rounded-full border-2 border-gold p-1 bg-black mb-6 glow-gold">
@@ -262,12 +280,10 @@
                         Enviar Mensaje Seguro
                     </button>
 
-                    <!-- Enlace de WhatsApp con el icono extraído de Yesicon (formato SVG optimizado) -->
                     <a href="https://wa.me/584265725810?text=Hola%20Dezio%20AI%2C%20me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios%20de%20automatizaci%C3%B3n." 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     class="inline-flex items-center gap-2 mt-2 text-gray-400 hover:text-green-500 transition-colors duration-300 font-orbitron font-bold text-xs uppercase tracking-widest">
-                        <!-- Icono de WhatsApp desde Yesicon (ic:baseline-whatsapp) -->
                         <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path d="M19.05 4.91A11.916 11.916 0 0 0 10.5 1c-6.62 0-12 5.38-12 12c0 2.11.55 4.18 1.61 5.99L.05 24l5.12-1.34a11.9 11.9 0 0 0 5.33 1.28c6.62 0 12-5.38 12-12c0-3.2-1.25-6.21-3.5-8.46M10.5 21.93c-1.8 0-3.56-.48-5.11-1.39l-.37-.22l-3.8 1l1.01-3.7l-.24-.38A9.927 9.927 0 0 1 1.5 13c0-5.51 4.49-10 10-10c2.67 0 5.18 1.04 7.07 2.93a9.923 9.923 0 0 1 2.93 7.07c0 5.52-4.49 10-10 10m5.47-7.49c-.3-.15-1.77-.87-2.04-.97c-.27-.1-.47-.15-.67.15c-.2.3-.77.97-.94 1.17c-.17.2-.35.22-.65.07c-.3-.15-1.27-.47-2.42-1.5c-.89-.8-1.5-1.78-1.67-2.08c-.18-.3-.02-.46.13-.61c.14-.13.3-.35.45-.53c.15-.17.2-.3.3-.5c.1-.2.05-.38-.02-.53c-.07-.15-.67-1.62-.92-2.22c-.24-.58-.49-.5-.67-.51c-.17-.01-.37-.01-.57-.01c-.2 0-.52.07-.8.37c-.27.3-1.05 1.03-1.05 2.5c0 1.48 1.08 2.91 1.23 3.11c.15.2 2.12 3.24 5.14 4.54c.72.31 1.28.5 1.72.64c.72.23 1.38.2 1.9.12c.58-.09 1.77-.72 2.02-1.42c.25-.7.25-1.3.17-1.42c-.07-.13-.27-.2-.57-.35"/>
                         </svg>
