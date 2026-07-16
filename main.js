@@ -14,18 +14,28 @@
         });
     });
 
-        // Simulación de envío de formulario de contacto
-        const contactForm = document.getElementById('contact-form');
-        contactForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            alert('¡Mensaje enviado con éxito! Nos pondremos en contacto contigo pronto.');
-            contactForm.reset();
-        });
-
-
-
-
+    document.addEventListener('DOMContentLoaded', function() {
+        const form = document.getElementById('contact-form');
         
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            const nombre = form.querySelector('input[type="text"]').value;
+            const correo = form.querySelector('input[type="email"]').value;
+            const mensaje = form.querySelector('textarea').value;
+            
+            const destinatario = 'dezioai2304@gmail.com';
+            const asunto = encodeURIComponent(`Nuevo Contacto Web: ${nombre}`);
+            const cuerpo = encodeURIComponent(
+                `Nombre Completo: ${nombre}\n` +
+                `Correo Electrónico: ${correo}\n\n` +
+                `¿Qué deseas automatizar?\n${mensaje}`
+            );
+            
+            window.location.href = `mailto:${destinatario}?subject=${asunto}&body=${cuerpo}`;
+        });
+    });
+
 
         tailwind.config = {
             theme: {
